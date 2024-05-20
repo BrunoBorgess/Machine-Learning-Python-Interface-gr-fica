@@ -52,6 +52,7 @@ plt.show()'''
 '''([self.entry_v1, self.entry_v2, self.entry_v3, self.entry_v4, self.entry_v5])'''
 
 class BackEnd():
+    # Pegando os valores das entrys com o método get()
     def funcs_machine(self):
         self.entry_name_entry = self.entry_name.get()
         # Pegando os valores das entrys mes
@@ -107,7 +108,7 @@ class BackEnd():
         plt.close(self.fig)
 
     def limpar_entrys(self):
-        # Limpando entry nome do projeto
+        # Limpando entry nome do projeto com o método delete, inicializando em 0 e com o argumento END para deletar até o final do que estiver dentro das entrys
         self.entry_name.delete(0, END)
         # Limpando entrys dos meses
         self.entry_mes1.delete(0, END)
